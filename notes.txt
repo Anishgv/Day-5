@@ -1,0 +1,145 @@
+Oops - Object Oriented Programming 
+Javascript has some inherited some features from java
+
+1.Encapsulation
+Encapsulation is a way to restrict the direct access to some components of an object.
+Example : Whatsapp
+
+2.Inheritance
+Inheritance is the concept in OOPs in which one class inherits the attributes and methods of another class. 
+The class whose properties and methods are inherited is known as the Parent class. And the class that inherits the properties from the parent class is the Child class.
+Example : genes/DNA
+
+3.Polymorphism
+A way to achieve a single action in different ways.
+Example : myself
+--------------------------------------------------------------------------------------------------------------
+Classes & Objects
+Methods 
+Accessing 
+--------------------------------------------------------------------------------------------------------------
+Class 
+It is a collection of properties, methods & Objects.
+classes are generally defined by using the class keyword
+class name starts with caps
+Syntax:
+class Classname {
+    //properties
+    //methods
+    //objects
+}
+
+Example:
+class Movie{
+    //rating ,review,actor,actress,director,music director
+}
+
+----------------------------------------------------------------------------------------------------
+Object 
+It is called as a real time entity.
+objects are specific to the class.
+Syntax
+var objectname = new Classname ();
+new - It is a keyword used to create instance of an object.
+-----------------------------------------------------------------------------------------------------
+Constructor :
+To store value inside the Objects.
+this - It is the temporary keyword which is pointing to the freshly created objects.
+Example:
+class Car {
+    constructor(brand,color){
+        this.brand = brand;
+        this.color = color
+    }
+}
+var test = new Car("Audi","black"); 
+console.log(test.brand);
+console.log(test.color);
+-----------------------------------------------------------------------------------------------------------
+Task
+class Person {
+    constructor(name,age,salary,gender){
+        this.name = name;
+        this.age = age;
+        this.salary = salary;
+        this.gender = gender;
+    }
+}
+var test = new Person("Anish",27,10000,"M");
+console.log(test.name+","+test.age+","+test.salary+","+test.gender);
+
+---------------------------------------------------------------------------------------------------------------
+Methods : Functions 
+printcolor(){
+    return this.color
+}
+----------------------------------------------------------------------------------------------------------------
+class Car {
+    constructor(brand,color){
+        this.brand = brand;
+        this.color = color
+    }
+    printcolor(str){
+        return str+this.color
+    }
+}
+var test = new Car("Audi","black"); 
+var result = test.printcolor("the color of my car is ")
+console.log(result)
+--------------------------------------------------------------------------------------------------------------------------
+
+class Circle {
+    constructor(radius,color){
+        this.radius = radius;
+        this.color = color;
+    }
+    get radiusCircle(){
+        return this.radius
+    }
+    get colorCircle(){
+        return this.color
+    }
+    set radiusCircle(radius){
+        this.radius = radius
+    }
+    set colorCircle(color){
+        this.color  = color
+    }
+    get toString(){
+        return `"Circle[radius=${this.radius},color=${this.color}]"`;
+    }
+    get areaCircle (){
+        return Math.PI * this.radius * this.radius;
+    }
+    get circumferenceCircle (){
+        return 2 * Math.PI * this.radius;
+    }
+}
+var obj1 = new Circle(1.0 ,"red");
+console.log(obj1.radiusCircle)
+obj1.radiusCircle = 2.2
+obj1.colorCircle = "White"
+console.log(obj1.radiusCircle)
+console.log (obj1.toString)
+console.log(obj1.areaCircle)
+console.log(obj1.circumferenceCircle)
+
+--------------------------------------------------------------------------------------------------------------------
+Arrow Functions
+var sum = (a,b)=>a *b
+console.log(sum(2,3))
+
+Arrow with return
+var sum = (a,b)=>{
+    result = 100;
+    total = result + a + b;
+    return total
+}
+console.log(sum(100,50))
+---------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
