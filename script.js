@@ -46,3 +46,4 @@ console.log(obj1.radiusCircle)
 console.log (obj1.toString)
 console.log(obj1.areaCircle)
 console.log(obj1.circumferenceCircle)
+//----------------------------------------------------------------------------------------------------------
